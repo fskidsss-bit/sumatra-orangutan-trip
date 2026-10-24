@@ -183,7 +183,7 @@ document.getElementById("aboutPhoto").style.background=`url(${P[10]}) center/cov
 document.getElementById("gal").innerHTML=[6,5,8,9,0,3].map(i=>`<div style="background-image:url(${P[i]})"></div>`).join("");
 const wa=t=>"https://wa.me/6287894277505?text="+encodeURIComponent("Hello, I would like to book: "+t);
 const pr=[["3 Hours",55],["1 Day",70],["2 Days",120],["3 Days",170],["4 Days",250],["5 Days",320],["6 Days",400],["7 Days",500]];
-document.getElementById("priceGrid").innerHTML=pr.map(p=>`<div class="pt"><small>${p[0]}</small><b>${p[1]}<span>€</span></b><a href="${wa(p[0]+" trek")}">Book now →</a></div>`).join("")+`<div class="pt wide"><small>7 Days to Kuta Cane (Southeast Aceh)</small><b>700<span>€</span></b><a href="${wa("7 days trek to Kuta Cane")}">Book now →</a></div><div class="pt note"><small>Foreign visitor permit</small><b>Rp 50,000</b>National park permit (HPI rate)</div>`;
+document.getElementById("priceGrid").innerHTML=pr.map(p=>`<div class="pt"><small>${p[0]}</small><b>${p[1]}<span>€</span></b><small>per person</small><a href="${wa(p[0]+" trek")}">Ask about this trek →</a></div>`).join("")+`<div class="pt wide"><small>7 Days to Kuta Cane (Southeast Aceh)</small><b>700<span>€</span></b><small>per person</small><a href="${wa("7 days trek to Kuta Cane")}">Ask about this trek →</a></div><div class="pt note"><small>Foreign visitor permit</small><b>Rp 50,000</b>National park permit (HPI rate; listed separately)</div>`;
 const nav=document.getElementById("nav");
 document.getElementById("burger").onclick=()=>nav.classList.toggle("open");
 nav.addEventListener("click",e=>{if(e.target.tagName==="A")nav.classList.remove("open")});
